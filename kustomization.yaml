@@ -3,6 +3,9 @@ kind: Kustomization
 
 namespace: jupyterhub
 
+generatorOptions:
+  disableNameSuffixHash: true
+
 configMapGenerator:
   - name: jupyterhub-custom-templates
     files:
