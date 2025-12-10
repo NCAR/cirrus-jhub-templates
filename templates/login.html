@@ -1,0 +1,33 @@
+{% extends "page.html" %}
+
+{% block stylesheet %}
+{{ super() }}
+<link rel="stylesheet" href="/hub/static/custom/css/style.css">
+{% endblock %}
+
+{% block login %}
+<div class="login-container">
+    <div class="cirrus-header">
+        <img src="/hub/static/custom/images/CIRRUS_Logo_White.png" 
+             alt="CIRRUS Logo" 
+             class="cirrus-logo">
+        <h1>JupyterHub</h1>
+        <p class="cirrus-subtitle">Cloud Infrastructure for Research Using Scalable Solutions</p>
+    </div>
+    
+    <div class="login-form-section">
+        {{ super() }}
+    </div>
+    
+    <div class="cirrus-footer">
+        <p>
+            Need help? Visit 
+            <a href="https://ncar-hpc-docs.readthedocs.io/en/latest/compute-systems/cirrus/guides/01-intro/" target="_blank">
+                CIRRUS Documentation
+            </a>
+            or email 
+            <a href="mailto:cirrus-admin@ucar.edu">cirrus-admin@ucar.edu</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

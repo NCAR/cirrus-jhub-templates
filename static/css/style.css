@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* NCAR Brand Colors */
+:root {
+    --ncar-blue: #0057C2;
+    --ncar-blue-dark: #00357A;
+    --ncar-dark: #011837;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif !important;
+    background-color: #F1F0EE !important;
+    background-image: url('/hub/static/custom/images/NCAR-Waves.png') !important;
+    background-position: right top !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Login Container */
+.login-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header Section */
+.cirrus-header {
+    background: linear-gradient(135deg, #0057C2 50%, #00357A 80%);
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cirrus-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/hub/static/custom/images/NCAR-Waves.png') no-repeat right center;
+    background-size: contain;
+    opacity: 0.1;
+}
+
+.cirrus-logo {
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cirrus-header h1 {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.cirrus-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Login Form Section */
+.login-form-section {
+    padding: 2rem;
+}
+
+.login-form-section .btn-jupyter {
+    background-color: var(--ncar-blue);
+    border-color: var(--ncar-blue);
+    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.login-form-section .btn-jupyter:hover {
+    background-color: var(--ncar-blue-dark);
+    border-color: var(--ncar-blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 87, 194, 0.3);
+}
+
+/* Footer Section */
+.cirrus-footer {
+    background-color: #f8f9fa;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+}
+
+.cirrus-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.cirrus-footer a {
+    color: var(--ncar-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cirrus-footer a:hover {
+    text-decoration: underline;
+}
+
+/* JupyterHub Header Customization */
+#header {
+    background-color: var(--ncar-blue-dark);
+    border-bottom: 3px solid var(--ncar-blue);
+}
+
+#header .navbar-brand {
+    font-weight: 700;
+}
+
+/* Remove default JupyterHub center alignment on login */
+#login-main .text-center {
+    text-align: left !important;
+}
