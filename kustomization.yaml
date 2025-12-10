@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: jupyterhub
+
+configMapGenerator:
+  - name: jupyterhub-custom-templates
+    files:
+      - templates/login.html
+  
+  - name: jupyterhub-custom-static
+    files:
+      - static/css/style.css
+      - static/images/CIRRUS_Logo_White.png
+      - static/images/NCAR-Waves.png
