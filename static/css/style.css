@@ -42,7 +42,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/hub/static/custom/images/NCAR-Waves.png') no-repeat right center;
+    background: url('https://raw.githubusercontent.com/NCAR/cirrus-jhub-templates/main/static/images/NCAR-Waves.png') no-repeat right center;
     background-size: contain;
     opacity: 0.1;
 }
