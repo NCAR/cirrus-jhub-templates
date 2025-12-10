@@ -11,6 +11,6 @@ configMapGenerator:
     files:
       - templates/login.html
   
-  - name: jupyterhub-custom-static
+  - name: jupyterhub-custom-static-css
     files:
       - static/css/style.css
