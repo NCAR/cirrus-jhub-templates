@@ -9,8 +9,8 @@ generatorOptions:
 configMapGenerator:
   - name: jupyterhub-custom-templates
     files:
-      - templates/login.html
+      - templates/login.html=templates/login.html
   
   - name: jupyterhub-custom-static-css
     files:
-      - static/css/style.css
+      - css/style.css=static/css/style.css
