@@ -1,4 +1,4 @@
-{% extends "login.html" %}
+{% extends "page.html" %}
 
 {% block stylesheet %}
 {{ super() }}
@@ -16,7 +16,18 @@
     </div>
     
     <div class="login-form-section">
-        {{ super() }}
+        <form action="{{authenticator_login_url | safe}}" method="post" role="form">
+            <input type="hidden" name="_xsrf" value="{{ xsrf_token }}" />
+            {% if custom_html %}
+            {{ custom_html | safe }}
+            {% elif login_service %}
+            <div class="service-login">
+                <button class="btn btn-jupyter" type="submit">Sign in with {{login_service}}</button>
+            </div>
+            {% else %}
+            <button class="btn btn-jupyter" type="submit">Sign in</button>
+            {% endif %}
+        </form>
     </div>
     
     <div class="cirrus-footer">
