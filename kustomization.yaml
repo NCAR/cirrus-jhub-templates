@@ -11,5 +11,5 @@ configMapGenerator:
   - name: jupyterhub-custom-static
     files:
       - static/css/style.css
-      - static/images/CIRRUS_Logo_White.png
+      - static/images/CISL-contemp-logo-blue.png
       - static/images/NCAR-Waves.png
