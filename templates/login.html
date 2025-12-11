@@ -1,5 +1,11 @@
 {% extends "page.html" %}
 
+{% block title %}CIRRUS JupyterHub{% endblock %}
+
+{% block favicon %}
+<link rel="icon" href="https://raw.githubusercontent.com/NCAR/cirrus-jhub-templates/main/static/images/favicon.ico" type="image/x-icon">
+{% endblock %}
+
 {% block stylesheet %}
 {{ super() }}
 <link rel="stylesheet" href="/hub/static/custom/css/style.css">
@@ -8,7 +14,7 @@
 {% block main %}
 <div class="login-container">
     <div class="cirrus-header">
-        <img src="https://raw.githubusercontent.com/NCAR/cirrus-jhub-templates/main/static/images/CISL-contemp-logo-blue.png" 
+        <img src="https://raw.githubusercontent.com/NCAR/cirrus-jhub-templates/main/static/images/NSF-NCAR_Logo_Color-White_RGB.png" 
              alt="NCAR Logo" 
              class="ncar-logo">
         <h1>CIRRUS JupyterHub</h1>
