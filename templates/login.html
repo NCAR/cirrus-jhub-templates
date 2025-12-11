@@ -11,6 +11,20 @@
 <link rel="stylesheet" href="/hub/static/custom/css/style.css">
 {% endblock %}
 
+{% block logo %}
+<span id="jupyterhub-logo" class="navbar-brand d-flex align-items-center">
+  <a href="{{ logo_url or base_url }}">
+    <img src='{{ base_url }}logo'
+         alt='JupyterHub logo'
+         class='jpy-logo'
+         title='Home' />
+  </a>
+  <img src="https://raw.githubusercontent.com/NCAR/cirrus-jhub-templates/main/static/images/NSF-NCAR_Logo_Color-White_RGB.png" 
+       alt="NCAR Logo" 
+       class="ncar-logo-navbar ms-3">
+</span>
+{% endblock logo %}
+
 {% block main %}
 <div class="login-container">
     <div class="cirrus-header">
