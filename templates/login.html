@@ -13,7 +13,7 @@
 
 {% block logo %}
 <span id="jupyterhub-logo" class="navbar-brand d-flex align-items-center">
-  <a href="{{ logo_url or base_url }}">
+  <a href="https://jupyter.org/hub">
     <img src='{{ base_url }}logo'
          alt='JupyterHub logo'
          class='jpy-logo'
@@ -32,14 +32,11 @@
              alt="CIRRUS Logo" 
              class="cirrus-logo">
         <h1>  
-            <a href="{{ logo_url or base_url }}">
             <img src='{{ base_url }}logo'
                 alt='JupyterHub logo'
                 class='jpy-logo'
                 title='Home' />
-        </a>
         </h1>
-        <p class="cirrus-subtitle">Cloud Infrastructure for Remote Research, Universities, and Scientists</p>
     </div>
     
     <div class="login-form-section">
