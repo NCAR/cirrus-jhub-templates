@@ -9,6 +9,7 @@ generatorOptions:
 configMapGenerator:
   - name: jupyterhub-custom-templates
     files:
+      - page.html=templates/page.html
       - login.html=templates/login.html
       - spawn.html=templates/spawn.html
   

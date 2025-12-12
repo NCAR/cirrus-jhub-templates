@@ -619,6 +619,38 @@ body {
     margin-right: 0.5rem;
 }
 
+/* Error Page Styling */
+.error {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.error h1 {
+    color: var(--ncar-blue);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.error p {
+    color: #6c757d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.error a {
+    color: var(--ncar-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.error a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .col-lg-3 {
