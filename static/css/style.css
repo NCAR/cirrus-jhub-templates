@@ -588,7 +588,7 @@ body {
 
 .spawn-form-card label {
     font-weight: 600;
-    color: #333;
+    color: var(--ncar-blue-dark);
     margin-bottom: 0.5rem;
 }
 
