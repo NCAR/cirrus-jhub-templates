@@ -52,6 +52,17 @@ body {
     align-items: center;
 }
 
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--ncar-blue-dark);
+    text-decoration: none;
+    background: none;
+    border: 0;
+}
+
 /* Utility class for alignment */
 .d-flex {
     display: flex !important;
