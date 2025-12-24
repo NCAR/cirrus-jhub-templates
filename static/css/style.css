@@ -220,7 +220,7 @@ body {
 }
 
 /* Spawn Page Styling */
-.h1, .h2 {
+.h1, .h2, h1, h2 {
     color: var(--ncar-blue-dark) !important;
 }
 
