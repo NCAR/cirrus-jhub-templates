@@ -68,6 +68,10 @@ body {
     --bs-nav-link-active-color: var(--ncar-blue-dark);
 }
 
+.me-1 {
+    color: var(--ncar-blue-dark);
+}
+
 /* Utility class for alignment */
 .d-flex {
     display: flex !important;
